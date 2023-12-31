@@ -14,5 +14,5 @@ jobs:
       - name: step with another shell
         id: shellStep
         shell: python
-        run: py --version
+        run: help
         
