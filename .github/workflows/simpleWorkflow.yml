@@ -1,0 +1,17 @@
+name: workflow overview
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  a_simple_job:
+    name: name of my simple job
+    runs-on: ubuntu-latest
+    steps:
+      - name: name of my step
+        id: stepId
+        run: echo "this is the first step from the first job!"
+        
